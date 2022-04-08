@@ -1,0 +1,78 @@
+#include <iostream>
+#include <string>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    float choice;
+    cout << setw(40) << " Life " << endl;
+    cout << "You graduate high school and have no clue what you want to do.\n What do you do?\n" << "Enter 1: Go to Community College\n" << "Enter 2: Start working" << endl;
+    cin >> choice;
+    
+    if(choice == 1)
+    {
+            cout << "You decide to major in nursing to help people. Time passes...You only need two more courses to transfer to nursing school, and you realize that you weren’t pursuing nursing for the right reasons. \n" << "Enter 3: Take a week off to pick a new major \n" << "Enter 4: Or decide to remain a nursing major to have a set path and a sturdy income" << endl;
+            cin >> choice;
+            if(choice == 3)
+        {
+            cout << "In that time, you open youtube and see a'My computer science degree' video. Once you finish the video, you feel excited and do more research within the major. A few days after, you decide to switch your major to computer science.\n" << "Congratulations, you are happy and making a good income.\n" << "Game over, you win. " << endl;
+        }
+            if(choice == 4)
+        {
+            cout << "You will finish up your classes this fall and transfer by fall of next year. During your break will you…\n" << "Enter 5: Work to pay off nursing school\n" << "Enter 6: Travel to destress and mentally prepare for nursing school" << endl;
+            cin >> choice;
+            if (choice == 5)
+            {
+                cout << "You worked for half a year and saved up a good amount. Due to your hard work once nursing school starts you won’t need to work.\n" << "Game Over, you win." << endl;
+            }
+            if(choice == 6)
+            {
+                cout << "You feel ready for the semester but realize you don't have enough money to make ends meet while being away at nursing school.\n" << "Enter 7: Work towards trying to become a tiktok star\n" << "Enter 8: Work a normal job to get through nursing school" << endl;
+                cin >> choice;
+                if(choice == 7)
+                {
+                    cout << "You enjoy making tik toks, and it’s your new hobby. However, a hobby is not a career, and you are homeless.\n Game over, you lose." << endl;
+                }
+                if (choice ==8)
+                {
+                    cout << "Congratulations! You get a job at Starbucks. However, you are hardly making ends meet. Therefore, you take out loans. Time passes…..You graduate with a nursing degree. Sadly, you die from catching COVID-19 at the hospital. \n" << "Game over, you lose. " << endl;
+                }
+                
+            }
+
+        }
+    }
+        if (choice == 2)
+        {
+            cout << "You find out you are in in debt. You are not allowed to work at any regular job. \n" << "Enter 9: Work with your family\n" << "Enter 10: Find under a under the counter job that will make you money" << endl;
+            cin >> choice;
+            if(choice == 9 || choice == 10)
+            {
+                cout << "You make a good living. Although you hate your job, you have a good amount of money. What do you do with your money?\n" << "Enter 11: Save money and help pay off the debt\n" << "Enter 12: Invest money " << endl;
+                cin >> choice;
+                if(choice == 11)
+                {
+                    cout << "Your parents finally paid off the debt, and you can work a regular job now! Yay! You find a good-paying job at T-mobile and work your way up the ladder to become a manager at the store. Sadly, you hate the hours and become depressed.\n" << "Game over, you lose." << endl;
+                }
+                if(choice == 12)
+                {
+                    cout << "You investment all your money into DogeCoin hoping it will take you to the moon. You wake up and see that the stock is close to one dollar\n" << "Enter 13: To sell\n" << "Enter 14: To stay" << endl;
+                    cin >> choice;
+                    if(choice == 13)
+                    {
+                        cout << "Congratulations, you are a millionaire and you can pay off the debt.\n" << "Game over, you won." << endl;
+                    }
+                    if(choice == 14)
+                    {
+                        cout << "You lost all your money, and become depressed.\n" << "Game over, you lose." << endl;
+                    }
+                    
+                }
+            }
+        }
+    
+    return 0;
+    
+    }
+
